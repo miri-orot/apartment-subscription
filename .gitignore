@@ -1,0 +1,183 @@
+# 🏠 부동산 청약정보 수집 프로그램 - .gitignore
+
+# ========================
+# 보안 중요 파일들
+# ========================
+# API 키가 포함된 설정 파일
+config.ini
+*.ini
+
+# 환경변수 파일
+.env
+.env.local
+.env.production
+
+# ========================
+# Python 관련
+# ========================
+# 바이트 코드 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 배포 관련
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# 가상환경
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+apartment_env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# ========================
+# 결과물 폴더
+# ========================
+# 수집된 데이터 파일들
+결과물/
+output/
+results/
+data/
+
+# 생성된 파일들
+*.xlsx
+*.json
+*.md
+*.docx
+
+# 로그 파일
+*.log
+logs/
+
+# ========================
+# IDE 및 에디터
+# ========================
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ========================
+# 운영체제
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# ========================
+# 임시 파일
+# ========================
+# 백업 파일
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# 압축 파일
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ========================
+# 테스트 관련
+# ========================
+# 테스트 커버리지
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ========================
+# 기타
+# ========================
+# 스크래치 파일
+scratch.*
+temp.*
+test.*
+
+# 사용자 정의 설정
+user_config.*
+local_settings.* 
