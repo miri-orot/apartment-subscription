@@ -80,17 +80,22 @@ class Config:
 
 def check_dependencies():
     """필요한 패키지 확인"""
-    required_packages = [
-        'requests', 'pandas', 'openpyxl', 'python-docx', 'beautifulsoup4'
-    ]
+    # 패키지명과 실제 임포트명 매핑
+    package_mapping = {
+        'requests': 'requests',
+        'pandas': 'pandas', 
+        'openpyxl': 'openpyxl',
+        'python-docx': 'docx',
+        'beautifulsoup4': 'bs4'
+    }
     
     missing_packages = []
     
-    for package in required_packages:
+    for package_name, import_name in package_mapping.items():
         try:
-            __import__(package.replace('-', '_'))
+            __import__(import_name)
         except ImportError:
-            missing_packages.append(package)
+            missing_packages.append(package_name)
     
     if missing_packages:
         print("❌ 필요한 패키지가 설치되지 않았습니다:")
